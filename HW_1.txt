@@ -1,0 +1,427 @@
+JSON
+
+ 4. Создать внешний репозиторий c названием JSON.
+
+ new -> Create repository
+
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+
+ git clone git@github.com:katay89/JSON.git
+
+ 6. Внутри локального JSON создать файл “new.json”.
+
+ cd JSON
+ touch new.json
+
+ 7. Добавить файл под гит.
+
+ git add new.json
+
+ 8. Закоммитить файл.
+
+ git commit -am "add new.json file"
+
+ 9. Отправить файл на внешний GitHub репозиторий.
+
+ git push
+
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+
+ vim new.json
+ INS
+ {
+        "Name": "Alexandr Kataev",
+        "Age": "33",
+        "Number of pets" : "2 (nephews)",
+        "Salary": "1500"
+ }
+ ESC
+ :wq
+
+ 11. Отправить изменения на внешний репозиторий.
+
+ git commit -am "update new.json file"
+ git push
+
+ 12. Создать файл preferences.json
+
+ touch preferences.json
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна которую хотели бы посетить) в формате JSON.
+
+ vim preferences.json
+ INS
+ {
+        "Favourite movie": "Catch me if you can",
+        "Favourite series": "How i met your mother",
+        "Favourite food": "Pasta",
+        "Favourite time of year": "Winter",
+        "Country I want to visit": "Portugal"
+ }
+ ESC
+ :wq
+
+
+ 14. Создать файл skills.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+
+ touch skills.json
+ vim skills.json
+ INS 
+ {
+        "1. Базовая теория (Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования и т.п.) SDLC, STLC.",
+        "2. Что такое клиент-серверная архитектура.",
+        "3. HTTP Методы запросов на сервер.",
+        "4. Коды ответов HTTP сервера.",
+        "5. Структуры HTTP запросов и ответов.",
+        "6. Что такое JSON, XML. Их структура.",
+        "7. Тестирование API через Postman (JS, автотесты API).",
+        "8. Снятие и чтение логов c внешнего сервера.",
+        "9. Снифинг http web трафика через Charles и Fiddler.",
+        "10. Dev Tools веб браузеров (Google Chrome, FireFox).",
+        "11. VPN. (Как работает, зачем нужен, как использовать, варианты инструментов)",
+        "12. Мобильное тестирование.",
+        "13. Особенность iOS, Android, гайдлайны.",
+        "14. Сборка iOS приложений на XCode. (У кого нет Mac компьютера, просто посмотрят)",
+        "15. Сборка Android приложений на Android Studio.",
+        "16. ADB (управление андройд девайсами).",
+        "17. Настройка прокси и vpn на iOS и Android.",
+        "18. Перехват (сниффинг) мобильного трафика через Charles и Fiddler на iOS и Android.",
+        "19. Командная строка (terminal) Linux (копирование, создание, просмотр, перемещение файлов на серверах без графического интерфейса).",
+        "20. Основы bash скриптинг, автоматизация рутинных задач на сервере.",
+        "21. Доступ к удалённым серверам.",
+        "22. Основы SQL (Create, Delete, Drop, Insert Into, Select, From, Where, Join).",
+        "23. База данных Postgres (установка, настройка и использование).",
+        "24. Нереляционная база данных Redis (установка, настройка и использование).",
+        "25. Нагрузочное тестирование в Jmeter.",
+        "26. Методология разработки Scrum.",
+        "27. Python. (Изучение основ. Создание клиент серверного приложения)"
+ }
+ ESC
+ :wq
+
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+
+ git add .
+ git commit -am "add preferences.json skills.json files"
+ git push
+
+ 16. На веб интерфейсе создать файл bug_report.json.
+
+ add file -> Create new file 
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+ Commit new file
+
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+
+ edit this file
+ {
+  
+  "ID": "1",
+  "Title": "При нажатии на кнопку 'Выбрать пункт выдачи' не открывается список пунктов выдачи",
+  "Project": "Интернет-Магазин техники",
+  "Environment": "Win 10, Firefox 106.0.5 (64 бита)",
+  "Severity": "Minor",
+  "Priority": "Low",
+  "Creator": "Kataev Alexandr",
+  "Steps to reproduce": "Открыть сайт интернет-магазина техники, сверху кликнуть на поле поиска, ввести название нужного товара, нажать поиск, нажать на нужный товар, перейти на станицу нужного товара, нажать на кнопку 'Добавить в корзину', нажать на кнопку 'Оформить', в разделе 'Способ доставки' нажать на 'Самовывоз', нажать на кнопку 'Выбрать пункт выдачи'",
+  "Expected result": "Открывается карта города с отмеченными пунктами выдачи",
+  "Actual result": "Ничего не происходит",
+  "Attachments": "Ссылка на видео с записью воспроизведения бага"
+  
+ }
+  
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+ Commit changes
+
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+ 
+ git pull
+
+
+
+
+XML
+
+ 21. Создать внешний репозиторий c названием XML.
+
+ New -> Create repository
+
+ 22. Клонировать репозиторий XML на локальный компьютер.
+
+ git clone git@github.com:katay89/XML.git
+
+ 23. Внутри локального XML создать файл “new.xml”.
+
+ cd xml
+ touch new.xml
+
+ 24. Добавить файл под гит.
+
+ git add new.xml
+
+ 25. Закоммитить файл.
+
+ git commit -am "add new.xml file"
+
+ 26. Отправить файл на внешний GitHub репозиторий.
+
+ git push
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+
+ vim new.xml
+ INS
+ <information>
+        <name>Alexandr Kataev</name>
+        <age>33</age>
+        <pets>2 (nephews)</pets>
+        <salary>1500</salary>
+ </information>
+ ESC
+:wq
+
+ 28. Отправить изменения на внешний репозиторий.
+
+ git add new.xml
+ git commit -am "update new.xml file"
+ git push
+
+ 29. Создать файл preferences.xml
+
+ touch preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна которую хотели бы посетить) в формате XML.
+
+ vim preferences.xml
+ INS
+ <preferences>
+        <favourite movie>Catch me if you can</favourite movie>
+        <favourite series>How i met your mother</favourite series>
+        <favourite food>Pasta</favourite food>
+        <country i want to visit>Argentina</country i want to visit>
+ </preferences>
+ :wq
+
+ 31. Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+
+ touch skills.xml
+ vim skills.xml
+ INS
+ <skills>
+<Базовая теория>Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования и т.п., SDLC, STLC</Базовая теория>
+<Клиент-сервер>Что такое клиент-серверная архитектура</Клиент-сервер>
+<HTTP>Методы запросов на сервер</HTTP>
+<Коды ответов>HTTP сервер</Коды ответов>
+<Структура HTTP>Запросы и ответы</Структура HTTP>
+<JSON,XML>Что такое JSON, XML. Их структура</JSON<XML>
+<Тестирование API>Через Postman (JS, автотесты API)</Тестирование API>
+<Внешний сервер>Снятие и чтение логов c внешнего сервера</Внешний сервер>
+<Снифинг>Снифинг http web трафика через Charles и Fiddler</Снифинг>
+<Dev Tools>Dev Tools веб браузеров (Google Chrome, FireFox)</Dev Tools>
+<VPN>VPN. (Как работает, зачем нужен, как использовать, варианты инструментов)</VPN>
+<Mobile testing>Мобильное тестирование</Mobile testing>
+<Мобильные ОС>Особенность iOS, Android, гайдлайны</Мобильные ОС>
+<Сборка iOS приложений>Сборка iOS приложений на XCode</Сборка iOS приложений>
+<Сборка Android приложений>Сборка Android приложений на Android Studio</Сборка Android приложений>
+<ADB>ADB (управление андройд девайсами)</ADB>
+<Proxy and VPN mobile>Настройка прокси и vpn на iOS и Android</Proxy and VPN mobile>
+<Mobile сниффинг>Перехват (сниффинг) мобильного трафика через Charles и Fiddler на iOS и Android</Mobile сниффинг>
+<Terminal>Командная строка (terminal) Linux (копирование, создание, просмотр, перемещение файлов на серверах без графического интерфейса)</Terminal>
+<Bash script>Основы bash скриптинг, автоматизация рутинных задач на сервере</Bash script>
+<Удаленные серверы>Доступ к удалённым серверам</Удаленные серверы>
+<SQL>Основы SQL (Create, Delete, Drop, Insert Into, Select, From, Where, Join)</SQL>
+<Postgres>База данных Postgres (установка, настройка и использование)</Postgres>
+<Redis>Нереляционная база данных Redis (установка, настройка и использование)</Redis>
+<Jmeter>Нагрузочное тестирование в Jmeter</Jmeter>
+<Scrum>Методология разработки Scrum</Scrum>
+<Python>Python. (Изучение основ. Создание клиент серверного приложения)</Python>
+</skills>
+ ESC
+:wd
+
+ 32. Сделать коммит в одну строку.
+
+ git add .
+ git commit -am "add preferences.xml skills.xml files"
+
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+
+ git push 
+
+ 34. На веб интерфейсе создать файл bug_report.xml.
+
+ Add file -> Create new file
+
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+ Commit new file
+
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+
+ edit this file
+ <bug report>
+  <ID>1</ID>
+  <Title>При нажатии на кнопку 'Выбрать пункт выдачи' не открывается список пунктов выдачи</Title>
+  <Project>Интернет-Магазин техники</Project>
+  <Environment>Win 10, Firefox 106.0.5 (64 бита)</Environment>
+  <Severity>Minor</Severity>
+  <Priority>Low</Priority>
+  <Creator>Kataev Alexandr</Creator>
+  <Steps to reproduce>Открыть сайт интернет-магазина техники, сверху кликнуть на поле поиска, ввести название нужного товара, нажать поиск, нажать на нужный товар, перейти на станицу нужного товара, нажать на кнопку 'Добавить в корзину', нажать на кнопку 'Оформить', в разделе 'Способ доставки' нажать на 'Самовывоз', нажать на кнопку 'Выбрать пункт выдачи'</Steps to reproduce>
+  <Expected result>Открывается карта города с отмеченными пунктами выдачи</Expected result>
+  <Actual result>Ничего не происходит</Actual result>
+  <Attachments>Ссылка на видео с записью воспроизведения бага</Attachments>
+</bug report>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+ Commit changes
+
+ 38. Синхронизировать внешний и локальный репозиторий XML
+
+ git pull
+
+
+
+
+
+TXT
+
+ 1. Создать внешний репозиторий c названием TXT.
+
+ New -> Create repository
+
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+
+ git clone git@github.com:katay89/TXT.git
+
+ 3. Внутри локального TXT создать файл “new.txt”.
+
+ cd txt
+ touch new.txt
+
+ 4. Добавить файл под гит.
+
+ git add new.txt
+
+ 5. Закоммитить файл.
+
+ git commit -am "add new.txt file"
+
+ 6. Отправить файл на внешний GitHub репозиторий.
+
+ git push
+
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+
+ vim new.txt
+ INS
+ name - Alexandr Kataev
+ age - 33
+ pets - 2(nephews)
+ salary - 1500
+ ESC 
+ :wq
+
+ 8. Отправить изменения на внешний репозиторий.
+ 
+ git add .
+ git commit -am "update new.txt file"
+ git push
+
+ 9. Создать файл preferences.txt
+
+ touch preferences.txt
+
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страна которую хотели бы посетить) в формате TXT.
+
+ vim preferences.txt
+ INS
+ favourite movie - Catch me if you can
+ favourite series - How i met your mother
+ favourite foo - Pasta
+ country i want to visit - Serbia again and again
+ ESC
+ :wq
+
+ 11. Создать файл skills.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+
+ touch skills.txt
+ vim skills.txt
+ INS
+ 1. Базовая теория (Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования и т.п.) SDLC, STLC.
+ 2. Что такое клиент-серверная архитектура.
+ 3. HTTP Методы запросов на сервер.
+ 4. Коды ответов HTTP сервера.
+ 5. Структуры HTTP запросов и ответов.
+ 6. Что такое JSON, XML. Их структура.
+ 7. Тестирование API через Postman (JS, автотесты API).
+ 8. Снятие и чтение логов c внешнего сервера.
+ 9. Снифинг http web трафика через Charles и Fiddler.
+ 10. Dev Tools веб браузеров (Google Chrome, FireFox).
+ 11. VPN. (Как работает, зачем нужен, как использовать, варианты инструментов)
+ 12. Мобильное тестирование.
+ 13. Особенность iOS, Android, гайдлайны.
+ 14. Сборка iOS приложений на XCode. (У кого нет Mac компьютера, просто посмотрят)
+ 15. Сборка Android приложений на Android Studio.
+ 17. Настройка прокси и vpn на iOS и Android.
+ 18. Перехват (сниффинг) мобильного трафика через Charles и Fiddler на iOS и Android.
+ 19. Командная строка (terminal) Linux (копирование, создание, просмотр, перемещение файлов на серверах без графического интерфейса)
+ 20. Основы bash скриптинг, автоматизация рутинных задач на сервере.
+ 21. Доступ к удалённым серверам.
+ 22. Основы SQL (Create, Delete, Drop, Insert Into, Select, From, Where, Join).
+ 23. База данных Postgres (установка, настройка и использование).
+ 24. Нереляционная база данных Redis (установка, настройка и использование).
+ 25. Нагрузочное тестирование в Jmeter.
+ 26. Методология разработки Scrum.
+ 27. Python. (Изучение основ. Создание клиент серверного приложения)
+ ESC
+ :wq
+
+ 12. Сделать коммит в одну строку.
+
+ git add .
+ git commit -am "add preferences.txt skills.txt files"
+
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+
+ git push
+
+ 14. На веб интерфейсе создать файл bug_report.txt.
+
+ Add file -> Create new file
+
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+ Commit new file
+
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+
+ edit this file
+ ID - 1
+ Title - При нажатии на кнопку 'Выбрать пункт выдачи' не открывается список пунктов выдачи
+ Project - Интернет-Магазин техники
+ Environment - Win 10, Firefox 106.0.5 (64 бита)
+ Severity - Minor 
+ Priority - Low
+ Creator - Kataev Alexandr
+ Steps to reproduce - Открыть сайт интернет-магазина техники, сверху кликнуть на поле поиска, ввести название нужного товара, нажать поиск, нажать на нужный товар, перейти на станицу нужного товара, нажать на кнопку 'Добавить в корзину', нажать на кнопку 'Оформить', в разделе 'Способ доставки' нажать на 'Самовывоз', нажать на кнопку 'Выбрать пункт выдачи'
+ Expected result - Открывается карта города с отмеченными пунктами выдачи
+ Actual result - Ничего не происходит
+ Attachments - Ссылка на видео с записью воспроизведения бага
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+ Commit changes
+
+ 
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+
+ git pull 
+
+
