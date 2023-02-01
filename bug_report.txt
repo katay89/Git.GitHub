@@ -1,0 +1,12 @@
+"ID"
+"Severity"
+"Priority"
+"Title"
+"Environment"
+"Precondition"
+"Steps to reproduce"
+"Expected Result"
+"Actual Result"
+"Attachments"
+"Creator"
+
